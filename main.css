@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html, body {
+    background-color: #111122;
+    color: white;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: calc(100vw - 2rem);
+    max-width: 500px;
+    background-color: #5555ff22;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.passwordOutput {
+    background-color: #5555ff22;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    word-break: break-all;
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    justify-self: right;
+}
+
+form.config {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+form.config button {
+    margin-top: 1rem;
+    grid-column: span 2;
+    background-color: #5555ff22;
+    border-radius: 5px;
+    padding: 1rem;
+    color: white;
+    border: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+form.config button:hover {
+    background-color: #5555ff;
+}
